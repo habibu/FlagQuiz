@@ -1,0 +1,57 @@
+ <!-- Habiibu Abdullahi @n 20/January/2017 -->
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<!-- para definir as metas e navigadores -->
+		<meta charset="utf-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+   		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>PHP StackOverflow API</title>
+		<!-- Bootstrap -->
+   		<link href="css/bootstrap.min.css" rel="stylesheet">
+    		<link href="css/bootstrap_custom.css" rel="stylesheet">
+	</head>
+	<body>
+	
+		<div class="container-fluid">
+			<h1> <em> PHP StackOverFlow </em> </h1>
+					<p >
+						<button id="btnPersistir"  class="btn btn-info btn-lg">Persistir dados</button>
+					</p>
+			<div class="jumbotron">
+				<fieldset class="fieldset" style="backgroun-color:#efefef">
+					<legend><p class="align-center"><h2><em>Buscar na API</em></h2></p></legend>
+					<form action="result.html" method="get" class="form-horizontal form-group" target="_blank" name="searchForm">
+						<label for="page">Page
+							<input id="page" type="text" name="page" class="form-control"/>
+						</label>
+						<label for="rpp">RPP
+							<input id="rpp" type="text" name="rpp" class="form-control"/>
+						</label>
+						<label for="sort">Sort
+							<input id="sort" type="text" name="sort" class="form-control"/>
+						</label>
+						<label for="score">Score
+							<input id="score" type="text" name="score" class="form-control"/>
+						</label>
+						<div class="col-xs-4" style="float:right;overflo:auto;">
+							<button id="btnBuscar" type="submit" class="btn btn-success btn-lg">Buscar</button>
+						</div>
+					</form>
+				</fieldset>
+			</div>
+			<div id="result">
+				<!-- imfelizmente imprimir branco mas apresntava melhor 
+				<pre><code id="items"> </code></pre> 
+				-->
+				<p>
+				<code id="items"> </code>
+				</p>
+			</div>
+		</div>
+		 <!-- jQuery (necessario para  Bootstrap's JavaScript plugins) -->
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+ 		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
