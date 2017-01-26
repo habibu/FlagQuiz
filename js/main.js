@@ -1,6 +1,6 @@
 //Habibu Abdullahi
 //@n 20/01/2017
-//function to listin to the button click
+//Function to listen to the buttons clicks
 
 $(document).ready(function(){
     	$("#btnPersistir").click(function(e)
@@ -19,11 +19,11 @@ $(document).ready(function(){
 
 	
 
-//function to make a ajax called for accessing the API source
+//Function to makes a ajax called for accessing the API source
 
 function persistirDados()
 	{	
-		//variables definitions
+		//Variables definitions
 
 		var $items = $('#items');
 		var json_result;
@@ -36,7 +36,7 @@ function persistirDados()
 			type:'GET',
 			url: 'https://api.stackexchange.com/2.2/questions?page=1&pagesize=99&order=desc&sort=activity&tagged=php&site=stackoverflow&client_id=8823',
 			dataType: 'json',
-			//function to receive and manipulate the json result
+			//Function to receives and manipulats the json result
 
 			success:function(items)
 			{
@@ -56,7 +56,7 @@ function persistirDados()
 				
 			},
 				
-			//alert an error message in case of url not received a feedback
+			//Alert an error message in case of url not received a feedback
 	
 			error:function(items)
 			{
@@ -67,7 +67,7 @@ function persistirDados()
 	}
 function buscarDados()
 	{
-		// varibles to be user for data manipulation and searching
+		// Variables to be use for the data manipulation and searching
 		var contents;
 		var result;
 		var unix_time = Math.round(+new Date()/1000);
@@ -83,7 +83,7 @@ function buscarDados()
 			type:'POST',
 			url: 'result.html',
 			dataType: 'json',
-			//function to receive and manipulate the json result
+			//Function to receive and manipulate the json result
 
 			success:function(dados)
 			{
